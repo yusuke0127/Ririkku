@@ -7,7 +7,6 @@ class ArtistPolicy < ApplicationPolicy
 
   def show?
     true
-
   end
 
   def create?
