@@ -1,3 +1,5 @@
 <h1>Artist Show page</h1>
 <!-- I will list all of the aritsts' songs here -->
+<h2><%= @artist.name %></h2>
+<%= link_to "Edit Artist", edit_artist_path(@artist) %>
 <%= link_to "All Artists", artists_path %>

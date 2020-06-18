@@ -18,4 +18,7 @@ wanima = { name: "WANIMA" }
   puts "Created #{artist.name}"
 end
 
+
+# puts "Creating songs..."
+# gurenge =
 puts "Finished"
