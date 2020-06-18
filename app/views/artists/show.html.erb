@@ -1,10 +1,11 @@
-<h1>Artist Show page</h1>
+<h1><%= @artist.name %></h1>
 <!-- I will list all of the aritsts' songs here -->
-<h2><%= @artist.name %></h2>
+<h2>Song list</h2>
 <ul>
-  <% @artist.songs do |song| %>
-    <%= song.en_title %>
+  <% @artist.songs.each do |song| %>
+    <li><%= song.en_title %></li>
   <% end %>
 </ul>
+<%= link_to "Add song for #{@artist.name}", new_artist_song_path(@artist)  %>
 <%= link_to "Edit Artist", edit_artist_path(@artist) %>
 <%= link_to "All Artists", artists_path %>
