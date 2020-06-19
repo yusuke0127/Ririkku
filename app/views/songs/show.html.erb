@@ -1,0 +1,6 @@
+<h1><%= @song.en_title %>(<%= @song.jp_title %>)</h1>
+<p>by <%= link_to @song.artist.name, artist_path(@song.artist) %></p>
+<h2>English lyrics</h2>
+<p><%= @song.en_lyric %></p>
+<h2>Japanese lyrics</h2>
+<p><%= @song.jp_lyric %></p>

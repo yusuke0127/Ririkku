@@ -26,6 +26,11 @@ class SongsController < ApplicationController
     end
   end
 
+  def song_list
+    @songs = policy_scope(Song)
+    authorize @songs
+  end
+
   private
 
   def song_params

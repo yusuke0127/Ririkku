@@ -12,4 +12,8 @@ class SongPolicy < ApplicationPolicy
   def create?
     true
   end
+
+  def song_list?
+    true
+  end
 end
