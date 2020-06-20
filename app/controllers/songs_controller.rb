@@ -1,4 +1,7 @@
 class SongsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show, :new, :create, :edit, :update, :song_list]
+
+
   def index
     @songs = policy_scope(Song)
   end
